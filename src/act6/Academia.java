@@ -2,7 +2,7 @@ package act6;
 
 import java.time.LocalDate;
 /**
- * Clase Academia donde vamos a probar las distintas funcionalidades
+ * Clase Academia, donde vamos a probar las distintas funcionalidades
  * 
  * @author Lourdes
  *
