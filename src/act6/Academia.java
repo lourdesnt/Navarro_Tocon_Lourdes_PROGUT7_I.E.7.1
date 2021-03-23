@@ -1,7 +1,12 @@
 package act6;
 
 import java.time.LocalDate;
-
+/**
+ * Clase Academia donde vamos a probar las distintas funcionalidades
+ * 
+ * @author Lourdes
+ *
+ */
 public class Academia {
 
 	public static void main(String[] args) {

@@ -3,10 +3,18 @@ package act5;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-
+/**
+ * Clase Nómina donde vamos a desarrollar las distintas funcionalidades para poder ingresar, listar, modificar y eliminar empleados y mostrar sus salarios
+ * 
+ * @author Lourdes
+ *
+ */
 public class Nomina {
 
 	static Scanner sc;
+	/**
+	 * Colección de empleados
+	 */
 	static Map<String, Empleado> empleados;
 
 	public static void main(String[] args) {
@@ -39,6 +47,9 @@ public class Nomina {
 		sc.close();
 	}
 		
+	/**
+	 * Método para mostrar un menú con opciones
+	 */
 	public static void menu() {
 		System.out.println("1. Ingresar empleado");
 		System.out.println("2. Listar empleados");
@@ -48,6 +59,9 @@ public class Nomina {
 		System.out.print("Introduzca una opcion: ");
 	}
 		
+	/**
+	 * Método que permite crear un nuevo empleado y añadirlo a la colección
+	 */
 	public static void ingresarEmpleado() {
 		System.out.println("Tipo de empleado:");
 		System.out.println("1. Empleado asalariado");
@@ -130,6 +144,9 @@ public class Nomina {
 		System.out.println("");
 	}
 		
+	/**
+	 * Método que permite listar los distintos empleados de la colección
+	 */
 	public static void listarEmpleados() {
 		if(empleados.isEmpty()) {
 			System.out.println("No existen empleados ingresados");
@@ -140,6 +157,9 @@ public class Nomina {
 		System.out.println("");
 	}
 		
+	/**
+	 * Método que permite eliminar a un empleado de la colección mediante su número de seguro social
+	 */
 	public static void eliminarEmpleado() {
 		System.out.print("Introduzca el Número de Seguro Social del empleado que desea eliminar: ");
 		String NSS = sc.nextLine();
@@ -157,6 +177,9 @@ public class Nomina {
 		System.out.println("");
 	}
 		
+	/**
+	 * Método que permite mostrar los ingresos de un empleado introduciendo su número de seguro social
+	 */
 	public static void mostrarIngresos() {
 		System.out.print("Introduzca el Número de Seguro Social del empleado del cual desea ver sus ingresos: ");
 		String NSS = sc.nextLine();
