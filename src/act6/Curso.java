@@ -86,6 +86,7 @@ public abstract class Curso {
 		if (a.getSaldo()>=precio && !alumnos.contains(a)) {
 			a.decrementaSaldo(precio);
 			alumnos.add(a);
+			a.getCursosMatriculados().add(this);
 			numAlumnos++;
 			System.out.println("Alumno matriculado con éxito");
 		} else {
