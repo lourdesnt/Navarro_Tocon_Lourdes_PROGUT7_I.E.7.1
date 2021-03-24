@@ -90,7 +90,7 @@ public abstract class Curso {
 			numAlumnos++;
 			System.out.println("Alumno matriculado con éxito");
 		} else {
-			System.err.println("No se ha podido matricular al alumno");
+			System.out.println("No se ha podido matricular al alumno");
 		}
 	}
 	

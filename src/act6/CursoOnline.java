@@ -37,7 +37,7 @@ public class CursoOnline extends Curso {
 		if(a.getCursosCompletos().stream().map(c -> c.getTitulo()).collect(Collectors.toList()).containsAll(cursosRequeridos)) {
 			super.matricularAlumno(a);
 		} else {
-			System.err.println("No se cumplen los requisitos");
+			System.out.println("No se cumplen los requisitos");
 		}
 	}
 	

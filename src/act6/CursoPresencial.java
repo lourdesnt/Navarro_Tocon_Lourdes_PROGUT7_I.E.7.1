@@ -27,7 +27,7 @@ public class CursoPresencial extends Curso {
 	/**
 	 * Atributo Plazas libres, que es igual al cupo menos el número de alumnos matriculados (tipo int)
 	 */
-	private int plazasLibres=cupo-alumnos.size();
+	private int plazasLibres;
 	/**
 	 * Colección de alumnos que se registran cada día
 	 */
@@ -49,6 +49,7 @@ public class CursoPresencial extends Curso {
 		this.cupo=cupo;
 		this.horasDiarias=horasDiarias;
 		this.numMinAsis=numMinAsis;
+		plazasLibres=cupo-alumnos.size();
 		asistencias = new HashMap<>();
 	}
 
@@ -60,7 +61,7 @@ public class CursoPresencial extends Curso {
 		if(plazasLibres>0) {
 			super.matricularAlumno(a);
 		} else {
-			System.err.println("No se cumplen los requisitos");
+			System.out.println("No se cumplen los requisitos");
 		}
 		
 	}
